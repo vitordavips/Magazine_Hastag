@@ -1,7 +1,7 @@
 const catalogo = [
     {
         id: 1,
-        nome: "Polo cor de Areia",
+        nome: "POLO EM TRICÔ COM MISTURA DE VISCODE",
         marca: "Zara",
         preco: 134,
         Imagem: "produto-1.jpg",
@@ -9,7 +9,7 @@ const catalogo = [
     },
     {
         id: 2,
-        nome: "Polo cor Cinza",
+        nome: "POLO COM TEXTURA",
         marca: "Zara",
         preco: 118,
         Imagem: "produto-2.jpg",
@@ -17,7 +17,7 @@ const catalogo = [
     },
     {
         id: 3,
-        nome: "Moletom",
+        nome: "MOLETOM COM ESTAMPA COMBINANDO",
         marca: "Zara",
         preco: 213,
         Imagem: "produto-3.jpg",
@@ -25,7 +25,7 @@ const catalogo = [
     },
     {
         id: 4,
-        nome: "Terno Cinza",
+        nome: "TERNO COM TEXTURA",
         marca: "Zara",
         preco: 467,
         Imagem: "produto-4.jpg",
@@ -33,7 +33,7 @@ const catalogo = [
     },
     {
         id: 5,
-        nome: "Vestido Branco e Verde",
+        nome: "VESTIDO DE POPELINA COMBINANDO",
         marca: "Zara",
         preco: 321,
         Imagem: "produto-5.jpg",
@@ -41,7 +41,7 @@ const catalogo = [
     },
     {
         id: 6,
-        nome: "Vestido verdo",
+        nome: "VESTIDO FRANZIDO DE LINHO",
         marca: "Zara",
         preco: 278,
         Imagem: "produto-6.jpg",
@@ -49,7 +49,7 @@ const catalogo = [
     },
     {
         id: 7,
-        nome: "Saia de Alfaiataria",
+        nome: "SHORT-SAIA CARGO",
         marca: "Zara",
         preco: 213,
         Imagem: "produto-7.jpg",
@@ -57,7 +57,7 @@ const catalogo = [
     },
     {
         id: 8,
-        nome: "Jaqueta Marrom",
+        nome: "BOMBER COM EFEITO DE LAVAGEM",
         marca: "Zara",
         preco: 118,
         Imagem: "produto-8.jpg",
