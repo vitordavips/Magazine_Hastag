@@ -63,16 +63,19 @@ const catalogo = [
         Imagem: "produto-8.jpg",
         feminino: true,
     }
-]
+];
 
-const cartaoProduto = `
-    <div id="card_produto-1">
-    <img src="assets/img/${catalogo[0].Imagem}" alt="Polo cor de Areia">
-    <p>${catalogo[0].marca}</p>
-    <p>${catalogo[0].nome}</p>
-    <p>$${catalogo[0].preco}</p>
-    <button>Adicionar</button>
-    </div>
-`;
+for (const produtoCatalogo of catalogo) {
+        const cartaoProduto = `
+            <div id="card_produto-1">
+            <img src="assets/img/${ produtoCatalogo.Imagem}" alt="Polo cor de Areia">
+            <p>${ produtoCatalogo.marca}</p>
+            <p>${ produtoCatalogo.nome}</p>
+            <p>$${ produtoCatalogo.preco}</p>
+            <button>Adicionar</button>
+            </div>
+        `;
 
-document.getElementById("container-produto").innerHTML += cartaoProduto
+    document.getElementById("container-produto").innerHTML += cartaoProduto
+}
+
