@@ -10,13 +10,20 @@
 </head>
 <body class="bg-stone-200 flex flex-col">
   <!-- Carrinho -->
-  <section id="carrinho" class="fixed top-0 right-[-360px] bg-slate-950 h-screen w-[360px] text-slate-200 z-50">
+  <section id="carrinho" class="fixed top-0 right-[-360px] bg-slate-950 h-screen w-[360px] text-slate-200 z-50 duration-200 border-l border-slate-200 p-5 flex flex-col justify-between">
     <div id="cabecalho-carrinho" class="flex justify-between m-4">
       <p>Meu carrinho</p>
       <button id="fechar-carrinho"><i class="fa-regular fa-circle-xmark"></i></button>
     </div>
     <section id="produtos-carrinho">
-      <p>polo-1</p>
+      <article class="flex bg-slate-100 rounded-lg p-1">
+        <img src="assets/img/produto-1.jpg" alt="Carrinho: POLO EM TRICÔ COM MISTURA DE VISCODE" class="h-24 rounded-lg">
+        <div>
+          <p class="text-slate-900">POLO EM TRICÔ COM MISTURA DE VISCODE</p>
+          <p class="text-slate-400">Tamanho: M</p>
+          <p>$134</p>
+        </div>
+      </article>
       <p>polo-2</p>
       <p>vestido</p>
     </section>
