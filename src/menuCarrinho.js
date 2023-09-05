@@ -17,8 +17,8 @@ export function inicializarCarrinho() {
     botaoAbrirCarrinho.addEventListener("click", abrirCarrinho);
 };
 
-function adicionarAoCarrinho(){
-    const conatinerProdutoCarrinho = document.getElementById("produtos-carrinho")
+export function adicionarAoCarrinho(){
+    const conatinerProdutoCarrinho = document.getElementById("produtos-carrinho");
     const cartaoProdutoCarrinho = `<article class="flex bg-slate-100 rounded-lg p-1 relative">
     <button id="fechar-carrinho" class="absolute top-0 right-2">
       <i class="fa-regular fa-circle-xmark text-slate-500 hover:text-slate-800"></i>
@@ -30,4 +30,5 @@ function adicionarAoCarrinho(){
       <p class="text-green-700 text-lg">$134</p>
     </div>
   </article>`;
+  conatinerProdutoCarrinho.innerHTML += cartaoProdutoCarrinho;
 };
