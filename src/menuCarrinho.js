@@ -22,7 +22,7 @@ export function inicializarCarrinho() {
 export function adicionarAoCarrinho(idProduto){
     //Ache um produto(p) tal que esse produto(p) tenha o id igual ao idProduto
     const produto = catalogo.find((p) => p.id === idProduto);
-    const conatinerProdutoCarrinho = document.getElementById("produtos-carrinho");
+    const containerProdutoCarrinho = document.getElementById("produtos-carrinho");
     const cartaoProdutoCarrinho = `<article class="flex bg-slate-100 rounded-lg p-1 relative">
     <button id="fechar-carrinho" class="absolute top-0 right-2">
       <i class="fa-regular fa-circle-xmark text-slate-500 hover:text-slate-800"></i>
@@ -34,5 +34,5 @@ export function adicionarAoCarrinho(idProduto){
       <p class="text-green-700 text-lg">$${produto.preco}</p>
     </div>
   </article>`;
-  conatinerProdutoCarrinho.innerHTML += cartaoProdutoCarrinho;
+  containerProdutoCarrinho.innerHTML += cartaoProdutoCarrinho;
 };

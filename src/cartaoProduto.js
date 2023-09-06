@@ -23,8 +23,6 @@ export function renderizarCatalago() {
     };
 
     for(const produtoCatalogo of catalogo) {
-        document
-            .getElementById(`adicionar-${produtoCatalogo.id}`)
-            .addEventListener("click", () => adicionarAoCarrinho);
-    };
+        document.getElementById(`adicionar-${produtoCatalogo.id}`).addEventListener("click", adicionarAoCarrinho);
+    }
 }
