@@ -27,10 +27,10 @@ export function adicionarAoCarrinho(idProduto){
     <button id="fechar-carrinho" class="absolute top-0 right-2">
       <i class="fa-regular fa-circle-xmark text-slate-500 hover:text-slate-800"></i>
     </button>
-    <img src="assets/img/produto-1.jpg" alt="Carrinho: POLO EM TRICÔ COM MISTURA DE VISCODE" class="h-24 rounded-lg">
+    <img src="assets/img/${produto.Imagem}" alt="Carrinho: ${produto.nome}" class="h-24 rounded-lg">
     <div class="py-2">
-      <p class="text-slate-900 text-sm">POLO EM TRICÔ COM MISTURA DE VISCODE</p>
-      <p class="text-slate-400 text-xs">Tamanho: ${produto.tamanho}</p>
+      <p class="text-slate-900 text-sm">${produto.nome}</p>
+      <p class="text-slate-400 text-xs">Tamanho: M</p>
       <p class="text-green-700 text-lg">$${produto.preco}</p>
     </div>
   </article>`;
