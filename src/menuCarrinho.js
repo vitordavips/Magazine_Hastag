@@ -1,3 +1,5 @@
+import { catalogo } from "./utilidades";
+
 function abrirCarrinho() {
     document.getElementById("carrinho").classList.add("right-[0px]");
     document.getElementById("carrinho").classList.remove("right-[-360px]");
@@ -17,7 +19,9 @@ export function inicializarCarrinho() {
     botaoAbrirCarrinho.addEventListener("click", abrirCarrinho);
 };
 
-export function adicionarAoCarrinho(){
+export function adicionarAoCarrinho(idProduto){
+    //Ache um produto(p) tal que esse produto(p) tenha o id igual ao idProduto
+    const produto = catalogo.find((p) => p.id === idProduto);
     const conatinerProdutoCarrinho = document.getElementById("produtos-carrinho");
     const cartaoProdutoCarrinho = `<article class="flex bg-slate-100 rounded-lg p-1 relative">
     <button id="fechar-carrinho" class="absolute top-0 right-2">
@@ -26,8 +30,8 @@ export function adicionarAoCarrinho(){
     <img src="assets/img/produto-1.jpg" alt="Carrinho: POLO EM TRICÔ COM MISTURA DE VISCODE" class="h-24 rounded-lg">
     <div class="py-2">
       <p class="text-slate-900 text-sm">POLO EM TRICÔ COM MISTURA DE VISCODE</p>
-      <p class="text-slate-400 text-xs">Tamanho: M</p>
-      <p class="text-green-700 text-lg">$134</p>
+      <p class="text-slate-400 text-xs">Tamanho: ${produto.tamanho}</p>
+      <p class="text-green-700 text-lg">$${produto.preco}</p>
     </div>
   </article>`;
   conatinerProdutoCarrinho.innerHTML += cartaoProdutoCarrinho;
